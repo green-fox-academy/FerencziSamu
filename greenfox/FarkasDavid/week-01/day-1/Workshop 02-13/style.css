@@ -1,0 +1,62 @@
+ul {
+    margin: 0 10%;
+}
+
+li {
+    float: right;
+    list-style-type: none;
+}
+
+li a {
+    color:#ff0099;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+body {
+    
+    background-image: url(topography.png);
+}
+.software {
+    color:#ff0099;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+p, article {
+    font-family: consolas, courier;
+}
+img {
+     text-align: center;
+     size: 100%;
+
+}
+
+nav {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.separator {
+    text-align: center;
+}
+
+article {
+    padding: 0 10%;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
