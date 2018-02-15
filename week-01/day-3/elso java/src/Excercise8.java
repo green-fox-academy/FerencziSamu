@@ -4,7 +4,7 @@ public class Excercise8 {
     int a = 123;
     int b = 526;
     int temp;
-    
+
     temp = a ;
     a = b ;
     b = temp;

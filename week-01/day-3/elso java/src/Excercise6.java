@@ -7,12 +7,14 @@ public class Excercise6 {public static void main(String[] args) {
     //
     // Print the percentage of the coding hours in the semester if the average
     // work hours weekly is 52
-    int week = 7 ;
-    int weekends = 5 ;
+    int weekDays = 7 ;
+    int workingDays = 5 ;
 
-        int workingHours = ((week - weekends)* 17* 6);
+
+        float workingHours = ((weekDays - workingDays)* 17* 6);
         System.out.println(workingHours);
-        System.out.println((workingHours / 52) *100);
+        float averageCodingHours= (workingDays * 6);
+        System.out.println((averageCodingHours / workingHours ) *100 );
 
 
 
