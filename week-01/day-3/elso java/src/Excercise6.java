@@ -9,7 +9,12 @@ public class Excercise6 {public static void main(String[] args) {
     // work hours weekly is 52
     int week = 7 ;
     int weekends = 5 ;
-        System.out.println(((week - weekends)* 17)* 6 );
+
+        int workingHours = ((week - weekends)* 17* 6);
+        System.out.println(workingHours);
+        System.out.println((workingHours / 52) *100);
+
+
 
 }
 }
