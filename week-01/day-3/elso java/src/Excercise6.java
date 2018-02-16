@@ -11,10 +11,11 @@ public class Excercise6 {public static void main(String[] args) {
     int workingDays = 5 ;
 
 
-        float workingHours = ((weekDays - workingDays)* 17* 6);
+        float workingHours = ((weekDays - 2)* 17* 6);
         System.out.println(workingHours);
+
         float averageCodingHours= (workingDays * 6);
-        System.out.println((averageCodingHours / workingHours ) *100 );
+        System.out.println((averageCodingHours / 52 ) *100 );
 
 
 
