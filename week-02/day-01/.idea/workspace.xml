@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Excercise11IncrementElements.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Excercise11IncrementElements.java">
+      <file leaf-file-name="Excercise12PrintAll.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Excercise12PrintAll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -93,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/Excercise09SumElements.java" />
         <option value="$PROJECT_DIR$/src/Excercise10ChangeElements.java" />
         <option value="$PROJECT_DIR$/src/Excercise11IncrementElements.java" />
+        <option value="$PROJECT_DIR$/src/Excercise12PrintAll.java" />
       </list>
     </option>
   </component>
@@ -162,27 +163,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Excercise11IncrementElements">
+  <component name="RunManager" selected="Application.Excercise12PrintAll">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="Excercise07Third" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Excercise07Third" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="day-01" />
-      <envs />
     </configuration>
     <configuration name="Excercise08CompareLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -229,6 +216,20 @@
     <configuration name="Excercise11IncrementElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Excercise11IncrementElements" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="day-01" />
+      <envs />
+    </configuration>
+    <configuration name="Excercise12PrintAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Excercise12PrintAll" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -315,19 +316,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Excercise07Third" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Excercise09SumElements" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Excercise10ChangeElements" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Excercise11IncrementElements" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Excercise09SumElements" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Excercise10ChangeElements" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Excercise11IncrementElements" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Excercise12PrintAll" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Excercise11IncrementElements" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Excercise10ChangeElements" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Excercise09SumElements" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Excercise07Third" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Excercise12PrintAll" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Excercise11IncrementElements" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Excercise10ChangeElements" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Excercise09SumElements" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
       </list>
     </recent_temporary>
   </component>
@@ -344,12 +345,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519039806161</updated>
-      <workItem from="1519039809661" duration="12075000" />
+      <workItem from="1519039809661" duration="12230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12075000" />
+    <option name="totallyTimeSpent" value="12230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -477,6 +478,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Excercise11IncrementElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Excercise10ChangeElements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -485,10 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Excercise11IncrementElements.java">
+    <entry file="file://$PROJECT_DIR$/src/Excercise12PrintAll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="180">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding />
         </state>
       </provider>
