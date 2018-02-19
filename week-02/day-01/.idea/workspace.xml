@@ -12,46 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Excercise02Greet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Excercise02Greet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Excercise03Append.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Excercise03Append.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Excercise04Sum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Excercise04Sum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Excercise05Factorio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Excercise05Factorio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Excercise06Printer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Excercise06Printer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Excercise08CompareLength.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Excercise08CompareLength.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Excercise08CompareLength.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -80,6 +40,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Excercise09SumElements.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Excercise09SumElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,6 +80,7 @@
         <option value="$PROJECT_DIR$/src/Excercise06Printer.java" />
         <option value="$PROJECT_DIR$/src/Excercise07Third.java" />
         <option value="$PROJECT_DIR$/src/Excercise08CompareLength.java" />
+        <option value="$PROJECT_DIR$/src/Excercise09SumElements.java" />
       </list>
     </option>
   </component>
@@ -179,27 +150,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Excercise08CompareLength">
+  <component name="RunManager" selected="Application.Excercise09SumElements">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="Excercise04Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Excercise04Sum" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="day-01" />
-      <envs />
     </configuration>
     <configuration name="Excercise05Factorio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -246,6 +203,20 @@
     <configuration name="Excercise08CompareLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Excercise08CompareLength" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="day-01" />
+      <envs />
+    </configuration>
+    <configuration name="Excercise09SumElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Excercise09SumElements" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -332,19 +303,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Excercise04Sum" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Excercise05Factorio" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Excercise06Printer" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Excercise07Third" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Excercise05Factorio" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Excercise06Printer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Excercise07Third" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Excercise09SumElements" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Excercise07Third" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Excercise06Printer" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Excercise05Factorio" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Excercise04Sum" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Excercise09SumElements" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Excercise08CompareLength" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Excercise07Third" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Excercise06Printer" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Excercise05Factorio" />
       </list>
     </recent_temporary>
   </component>
@@ -361,12 +332,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519039806161</updated>
-      <workItem from="1519039809661" duration="10424000" />
+      <workItem from="1519039809661" duration="10661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10424000" />
+    <option name="totallyTimeSpent" value="10661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -460,14 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Excercise06Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Excercise07Third.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -483,6 +446,22 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Excercise06Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Excercise09SumElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
