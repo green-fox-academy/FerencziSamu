@@ -21,7 +21,7 @@ public class Excercise13Matrix {
 
         for (int i = 0; i < 4; i++) {     //fuggoleges
             for (int j = 0; j < 4; j++) { //vizszintes
-                if (i == 0 && j == 0) {
+                if (i == 0 && j == 0 || (i == 1 && j == 1) || (i == 2 && j == 2) || (i == 3 && j == 3)) {
                     System.out.print(1);
                 }
                  else {
