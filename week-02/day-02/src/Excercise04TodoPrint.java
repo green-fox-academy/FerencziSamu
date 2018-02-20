@@ -15,7 +15,7 @@ public class Excercise04TodoPrint {
         String download = " - Download games";
         String diablo = " \n \t - Diablo";
         String myTodo = (("My todo:\n"+todoText)+download)+diablo;
-        
+
         System.out.println(myTodo);
     }
 }
