@@ -6,10 +6,7 @@ public class Excercise01SimpleReplace {
 
         String example = "In a dishwasher far far away";
 
-
         example = example.replace("dishwasher", "galaxy");
-
-
 
         System.out.println(example);
     }
