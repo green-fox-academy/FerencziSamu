@@ -9,9 +9,10 @@ public class Excercise02UrlFixer {
         String url = "https//www.reddit.com/r/nevertellmethebots";
 
 
-            String replaceString = url.replace("bots","odds");//replaces all occurrences of "is" to "was"
+            String replaceString = url.replace("bots","odds");
             replaceString = replaceString.replace("s/","s:/");
             System.out.println(replaceString);
+
 
         }
     }
