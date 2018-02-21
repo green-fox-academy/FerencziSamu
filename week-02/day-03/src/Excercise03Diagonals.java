@@ -1,17 +1,20 @@
 import javax.swing.*;
+
 import java.awt.*;
+
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
-public class Excercise01LineInTheMiddle {
 
+public class Excercise03Diagonals {
     public static void mainDraw(Graphics graphics) {
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
+        // Draw the canvas' diagonals.
+        // If it starts from the upper-left corner it should be green, otherwise it should be red.
         graphics.setColor((Color.green));
-        graphics.drawLine(160, 0, 160, 343);
+        graphics.drawLine(0, 0, 320, 343);
         graphics.setColor((Color.red));
-        graphics.drawLine(0, 160, 320, 171);
-    }
+        graphics.drawLine(320, 0, 0, 343);
 
+
+    }
 
     // Don't touch the code below
     static int WIDTH = 320;
