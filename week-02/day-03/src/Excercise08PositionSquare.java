@@ -10,12 +10,13 @@ public class Excercise08PositionSquare {
         // draw 3 squares with that function.
         // avoid code duplication.
 
-        int WIDTH = 50;
-        int HEIGHT = 50;
+
 
         for (int i = 0; i < 3; i++) {
             int xTopLeft = (int)(Math.random()*255);
             int yTopLeft = (int)(Math.random()*255);
+            int WIDTH = 50;
+            int HEIGHT = 50;
             squareDrawing(xTopLeft,yTopLeft,WIDTH,HEIGHT,graphics);
 
         }
