@@ -22,11 +22,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Excercise15Colors.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Excercise15Colors.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Excercise15Colors.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Excercise16AppendA.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Excercise16AppendA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -51,6 +61,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Excercise14DoubleItems.java" />
         <option value="$PROJECT_DIR$/src/Excercise15Colors.java" />
+        <option value="$PROJECT_DIR$/src/Excercise16AppendA.java" />
       </list>
     </option>
   </component>
@@ -120,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Excercise15Colors">
+  <component name="RunManager" selected="Application.Excercise16AppendA">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -145,6 +156,20 @@
     <configuration name="Excercise15Colors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Excercise15Colors" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="day-04" />
+      <envs />
+    </configuration>
+    <configuration name="Excercise16AppendA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Excercise16AppendA" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -230,14 +255,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Excercise14DoubleItems" />
       <item index="1" class="java.lang.String" itemvalue="Application.Excercise15Colors" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Excercise16AppendA" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Excercise15Colors" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Excercise14DoubleItems" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.Excercise16AppendA" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Excercise15Colors" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Excercise14DoubleItems" />
       </list>
     </recent_temporary>
   </component>
@@ -254,12 +281,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519287052683</updated>
-      <workItem from="1519287057089" duration="3999000" />
+      <workItem from="1519287057089" duration="4337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3999000" />
+    <option name="totallyTimeSpent" value="4337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -325,6 +352,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Excercise16AppendA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
           <folding />
         </state>
       </provider>
