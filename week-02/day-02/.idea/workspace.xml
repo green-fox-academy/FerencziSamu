@@ -26,12 +26,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Excercise08AppendLetter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Excercise08AppendLetter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Excercise08AppendLetter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="54">
+              <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Excercise09Candyshop.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Excercise09Candyshop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <folding>
+                <element signature="e#153#161#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +73,7 @@
         <option value="$PROJECT_DIR$/src/Excercise06SolarSystem.java" />
         <option value="$PROJECT_DIR$/src/Excercise07Matchmaking.java" />
         <option value="$PROJECT_DIR$/src/Excercise08AppendLetter.java" />
+        <option value="$PROJECT_DIR$/src/Excercise09Candyshop.java" />
       </list>
     </option>
   </component>
@@ -130,27 +143,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Excercise08AppendLetter">
+  <component name="RunManager" selected="Application.Excercise09Candyshop">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="Excercise04TodoPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Excercise04TodoPrint" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="day-02" />
-      <envs />
     </configuration>
     <configuration name="Excercise05Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -197,6 +196,20 @@
     <configuration name="Excercise08AppendLetter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Excercise08AppendLetter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="day-02" />
+      <envs />
+    </configuration>
+    <configuration name="Excercise09Candyshop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Excercise09Candyshop" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -283,19 +296,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Excercise04TodoPrint" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Excercise05Reverse" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Excercise06SolarSystem" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Excercise07Matchmaking" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Excercise08AppendLetter" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Excercise05Reverse" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Excercise06SolarSystem" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Excercise07Matchmaking" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Excercise08AppendLetter" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Excercise09Candyshop" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Excercise08AppendLetter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Excercise07Matchmaking" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Excercise06SolarSystem" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Excercise05Reverse" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Excercise04TodoPrint" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Excercise09Candyshop" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Excercise08AppendLetter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Excercise07Matchmaking" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Excercise06SolarSystem" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Excercise05Reverse" />
       </list>
     </recent_temporary>
   </component>
@@ -314,12 +327,12 @@
       <updated>1519123901807</updated>
       <workItem from="1519123905374" duration="12841000" />
       <workItem from="1519199375152" duration="625000" />
-      <workItem from="1519296490126" duration="12197000" />
+      <workItem from="1519296490126" duration="14072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25663000" />
+    <option name="totallyTimeSpent" value="27538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -534,9 +547,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Excercise08AppendLetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="54">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Excercise09Candyshop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="e#153#161#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
