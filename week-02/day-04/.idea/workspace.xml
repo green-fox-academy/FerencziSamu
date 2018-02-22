@@ -52,11 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Excercise18SumAll.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Excercise18SumAll.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Excercise18SumAll.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Excercise19Reverse.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Excercise19Reverse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -84,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/Excercise16AppendA.java" />
         <option value="$PROJECT_DIR$/src/Excercise17SwapElements.java" />
         <option value="$PROJECT_DIR$/src/Excercise18SumAll.java" />
+        <option value="$PROJECT_DIR$/src/Excercise19Reverse.java" />
       </list>
     </option>
   </component>
@@ -153,27 +164,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Excercise18SumAll">
+  <component name="RunManager" selected="Application.Excercise19Reverse">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="Excercise14DoubleItems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Excercise14DoubleItems" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="day-04" />
-      <envs />
     </configuration>
     <configuration name="Excercise15Colors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -220,6 +217,20 @@
     <configuration name="Excercise18SumAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Excercise18SumAll" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="day-04" />
+      <envs />
+    </configuration>
+    <configuration name="Excercise19Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Excercise19Reverse" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -306,19 +317,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Excercise14DoubleItems" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Excercise15Colors" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Excercise16AppendA" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Excercise17SwapElements" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Excercise18SumAll" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Excercise15Colors" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Excercise16AppendA" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Excercise17SwapElements" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Excercise18SumAll" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Excercise19Reverse" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Excercise18SumAll" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Excercise17SwapElements" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Excercise16AppendA" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Excercise15Colors" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Excercise14DoubleItems" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Excercise19Reverse" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Excercise18SumAll" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Excercise17SwapElements" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Excercise16AppendA" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Excercise15Colors" />
       </list>
     </recent_temporary>
   </component>
@@ -335,12 +346,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519287052683</updated>
-      <workItem from="1519287057089" duration="5917000" />
+      <workItem from="1519287057089" duration="7858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5917000" />
+    <option name="totallyTimeSpent" value="7858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -430,6 +441,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Excercise19Reverse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
         </state>
       </provider>
