@@ -15,7 +15,7 @@ public class Excercise07Matchmaking {
     }
 
     public static List<String> makingMatches(List<String> listOfGirls, List<String> listOfBoys) {
-        int position = 1;
+        int position = 0;
         if (listOfBoys.size() > listOfGirls.size()) {
             for (int i = 0; i < listOfGirls.size(); i++) {
                 listOfBoys.add(position, listOfGirls.get(i));
@@ -23,8 +23,7 @@ public class Excercise07Matchmaking {
             }
 
         }
-
         return listOfBoys;
-    }
 
+    }
 }
