@@ -9,7 +9,7 @@ public class TriangleTrySmall {
     static int WIDTH = 800;
     static int HEIGHT = 800;
     static int xpoints[] = {20 + (WIDTH / 2), (WIDTH / 2), 10 + (WIDTH / 2)};
-    static int ypoints[] = {18, 18, 1};
+    static int ypoints[] = {19, 19, 1};
     static int npoints = 3;
 
     public static void mainDraw(Graphics graphics) {
