@@ -13,13 +13,10 @@ public class ProjectTriangle {
             int npoints = 3;
 
             graphics.drawPolygon(xpoints, ypoints, npoints);
+
         }
 
-    }
-
-
-
-
+            }
 
     // Don't touch the code below
     static int WIDTH = 500;
