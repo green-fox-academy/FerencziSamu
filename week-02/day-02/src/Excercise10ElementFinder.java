@@ -9,4 +9,8 @@ public class Excercise10ElementFinder{
         // Do this again with a different solution using different list methods!
 
     }
+
+    private static boolean containsSeven(ArrayList<Integer> arrayList) {
+        return false;
+    }
 }
