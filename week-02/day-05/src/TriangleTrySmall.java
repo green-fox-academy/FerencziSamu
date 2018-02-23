@@ -6,18 +6,18 @@ import java.util.Arrays;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 public class TriangleTrySmall {
-       static int WIDTH = 800;
-       static int HEIGHT = 800;
-       static int xpoints[] = {20+(WIDTH/2), (WIDTH/2), 10+(WIDTH/2)};
-       static int ypoints[] = {18, 18, 1};
-       static int npoints = 3;
+    static int WIDTH = 800;
+    static int HEIGHT = 800;
+    static int xpoints[] = {20 + (WIDTH / 2), (WIDTH / 2), 10 + (WIDTH / 2)};
+    static int ypoints[] = {18, 18, 1};
+    static int npoints = 3;
 
     public static void mainDraw(Graphics graphics) {
         for (int sor = 0; sor < 20; sor++) {
             xModifier(xpoints);
             yModifier(ypoints);
             graphics.drawPolygon(xpoints, ypoints, npoints);
-            for (int oszlop = 0; oszlop < sor+1; oszlop++) {
+            for (int oszlop = 0; oszlop < sor + 1; oszlop++) {
                 int[] kiindulo = oszloptolas(xpoints, oszlop);
                 graphics.drawPolygon(kiindulo, ypoints, npoints);
             }
@@ -25,7 +25,7 @@ public class TriangleTrySmall {
     }
 
     private static int[] oszloptolas(int[] xpoints, int oszlop) {
-        int[] kiindulo = Arrays.copyOf(xpoints,xpoints.length);
+        int[] kiindulo = Arrays.copyOf(xpoints, xpoints.length);
         for (int i = 0; i < xpoints.length; i++) {
             kiindulo[i] = (kiindulo[i] + (20 * oszlop));
         }
