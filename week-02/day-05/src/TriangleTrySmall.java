@@ -1,6 +1,7 @@
 import javax.swing.*;
-
 import java.awt.*;
+import java.util.Arrays;
+
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
@@ -12,16 +13,23 @@ public class TriangleTrySmall {
        static int npoints = 3;
 
     public static void mainDraw(Graphics graphics) {
-        for (int i = 0; i < 10; i++) {
+        for (int sor = 0; sor < 20; sor++) {
             xModifier(xpoints);
             yModifier(ypoints);
             graphics.drawPolygon(xpoints, ypoints, npoints);
-
-            for (int j = 0; j < i+1; j++) {
-
+            for (int oszlop = 0; oszlop < sor+1; oszlop++) {
+                int[] kiindulo = oszloptolas(xpoints, oszlop);
+                graphics.drawPolygon(kiindulo, ypoints, npoints);
             }
         }
+    }
 
+    private static int[] oszloptolas(int[] xpoints, int oszlop) {
+        int[] kiindulo = Arrays.copyOf(xpoints,xpoints.length);
+        for (int i = 0; i < xpoints.length; i++) {
+            kiindulo[i] = (kiindulo[i] + (20 * oszlop));
+        }
+        return kiindulo;
     }
 
     private static int[] yModifier(int[] ypoints) {
