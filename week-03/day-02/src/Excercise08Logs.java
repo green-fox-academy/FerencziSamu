@@ -2,8 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 
 public class Excercise08Logs {
@@ -16,21 +15,22 @@ public class Excercise08Logs {
     try {
       List<String> lines = Files.readAllLines(logFile);
       uniqueIp(lines);
-
+      System.out.println(lines);
     } catch (IOException e) {
 
     }
 
   }
 
-  private static void uniqueIp(List<String> rows) {
+  private static Object[] uniqueIp(List<String> rows) {
     ArrayList<String> lista = new ArrayList<>();
     for (int i = 0; i < rows.size(); i++) {
       lista.add(rows.get(i).substring(27, 38));
-      System.out.println(lista.get(i));
-
-
+      //Collections.sort(lista);
     }
+    Set<String> uniqueValues = new HashSet<>();
+    uniqueValues.addAll(lista);
+    return uniqueValues.toArray();
   }
 }
 
