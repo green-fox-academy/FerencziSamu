@@ -18,7 +18,7 @@ public class Excercise05WriteMultipleLines {
     // So if the word is "apple" and the number is 5, than it should write 5 lines
     // to the file and each line should be "apple"
     // The function should not raise any error if it could not write the file.
-    String pathString = "my-file.txt";
+
     writeToFile();
   }
 
@@ -30,8 +30,8 @@ public class Excercise05WriteMultipleLines {
       List<String> content = new ArrayList();
       for (int i = 0; i < numbersOfRow; i++) {
         content.add(word);
-        Files.write(location,content);
-      }
+
+      }Files.write(location,content);
     } catch (IOException e) {
       e.printStackTrace();
     }
