@@ -5,6 +5,4 @@ public class BlogPost {
   public String publicationDate;
 
 
-
-
 }
