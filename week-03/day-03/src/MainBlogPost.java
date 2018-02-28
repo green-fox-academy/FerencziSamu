@@ -22,7 +22,7 @@ public class MainBlogPost {
             "really into the whole organizer profile thing.";
     blogPost3.title = "One Engineer Is Trying to Get IBM to Reckon With Trump";
 
-    
+
   }
 
 }
