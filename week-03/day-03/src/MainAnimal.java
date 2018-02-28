@@ -3,6 +3,9 @@ public class MainAnimal {
   Animal cat = new Animal();
   cat.drink();
   cat.play();
+  cat.eat();
+  cat.eat();
+  cat.eat();
 
     System.out.println(cat.toString());
 
