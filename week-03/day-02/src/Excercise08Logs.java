@@ -23,13 +23,15 @@ public class Excercise08Logs {
   }
 
   private static Object[] uniqueIp(List<String> rows) {
-    ArrayList<String> lista = new ArrayList<>();
+    ArrayList<String> list = new ArrayList<>();
     for (int i = 0; i < rows.size(); i++) {
-      lista.add(rows.get(i).substring(27, 38));
+      int firstIndex = 27;
+      int lastIndex = 38;
+      list.add(rows.get(i).substring(firstIndex, lastIndex));
       //Collections.sort(lista);
     }
     Set<String> uniqueValues = new HashSet<>();
-    uniqueValues.addAll(lista);
+    uniqueValues.addAll(list);
     return uniqueValues.toArray();
   }
 }

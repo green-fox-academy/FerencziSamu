@@ -7,6 +7,7 @@ public class Excercise07String1 {
     System.out.println(charcChanger(text));
   }
 
+  /*
   public static String charcChanger(String text) {
     if (!text.contains("x")) {
       return text;
@@ -16,4 +17,14 @@ public class Excercise07String1 {
 
   }
 }
-
+ */
+  public static String charcChanger(String text) {
+    if (text.length() == 0) {
+      return text;
+    } else if (text.charAt(0) == 'x') {
+      return "y" + charcChanger(text.substring(1));
+    } else {
+      return text.charAt(0) + charcChanger(text.substring(1));
+    }
+  }
+}
