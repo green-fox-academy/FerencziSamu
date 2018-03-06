@@ -3,7 +3,8 @@ import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
-    ArrayList<Object> people = new ArrayList<>();
+    Cohort cohort = new Cohort("Bee-cool");
+    ArrayList<Person> people = new ArrayList<>();
 
     Person mark = new Person("Mark", 46, "male");
     people.add(mark);
@@ -33,5 +34,11 @@ public class Main {
       person.introduce();
       person.getGoal();
     }
+
+    cohort.addStudent(john);
+    cohort.addStudent(student);
+    cohort.addMentor(gandhi);
+    cohort.addMentor(mentor);
+
   }
 }

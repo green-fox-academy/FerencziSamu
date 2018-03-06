@@ -1,10 +1,13 @@
 public class Person {
 
-  private String name = "Jane Doe";
-  private int age = 30;
-  private String gender = "female";
+  private String name;
+  private int age;
+  private String gender;
 
   Person(){
+    name = "Jane Doe";
+    age = 30;
+    gender = "female";
   }
 
   Person(String name, int age, String gender) {
