@@ -1,3 +1,5 @@
+package GreenFoxOrganization;
+
 public class Student extends Person {
 
   private String previousOrganization = "The School of Life";
