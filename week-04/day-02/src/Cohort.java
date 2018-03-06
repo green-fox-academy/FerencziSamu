@@ -19,4 +19,8 @@ public class Cohort {
   public void addMentor(Mentor mentor) {
     this.listOfMentors.add(mentor);
   }
+  public void info(){
+    System.out.println("The " + name + " cohort has "+ listOfStudents.size() +
+            " students and " + listOfMentors.size() + " mentors");
+  }
 }

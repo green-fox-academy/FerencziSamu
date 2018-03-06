@@ -39,6 +39,7 @@ public class Main {
     cohort.addStudent(student);
     cohort.addMentor(gandhi);
     cohort.addMentor(mentor);
-
+    System.out.println();
+    cohort.info();
   }
 }
