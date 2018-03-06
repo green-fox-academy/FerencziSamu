@@ -3,6 +3,8 @@ package TheGardenApplication;
 public class Plants {
   private String color;
   private int waterLevel;
+  private boolean isTree;
+  private boolean isThursty;
 
   Plants(){
   }
@@ -26,5 +28,22 @@ public class Plants {
 
   public void setWaterLevel(int waterLevel) {
     this.waterLevel = waterLevel;
+  }
+
+  public void setPlantsType(boolean isTree) {
+    this.isTree = isTree;
+  }
+
+  public boolean isTree() {
+    return isTree;
+  }
+
+
+  public boolean isThursty() {
+    return isThursty;
+  }
+
+  public void setThursty(boolean thursty) {
+    isThursty = thursty;
   }
 }
