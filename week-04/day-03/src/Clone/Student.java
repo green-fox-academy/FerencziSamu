@@ -1,3 +1,5 @@
+package Clone;
+
 public class Student extends Person implements Cloneable {
 
   private String previousOrganization = "The School of Life";

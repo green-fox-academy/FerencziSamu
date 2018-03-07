@@ -1,3 +1,5 @@
+package Clone;
+
 public class Person {
 
   private String name;
