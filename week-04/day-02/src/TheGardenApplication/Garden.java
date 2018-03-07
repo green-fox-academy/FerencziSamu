@@ -51,12 +51,22 @@ public class Garden {
         if (plants.get(i).isThursty()) {
           plants.get(i).setWaterLevel((int) (plants.get(i).getWaterLevel() + calculate(amountOfWater)));
         }
+        System.out.println("Watering with " + amountOfWater);
       }
     }
   }
 
   private double calculate(double amountOfWater) {
     return amountOfWater / countThirsty;
+  }
+  public void status(){
+    for (int i = 0; i < plants.size(); i++) {
+      if (plants.get(i).isThursty() == true){
+        System.out.println(plants.get(i) + "is thirsty!");
+      }else {
+        System.out.println(plants.get(i) + "is not thirsty!");
+      }
+    }
   }
 }
 

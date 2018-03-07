@@ -14,12 +14,11 @@ public class Main {
     garden.add(flower2);
     garden.isItFlowerOrTree();
     garden.checkWaterLevel();
-    garden.watering(40);
+
     //watering print here
-    System.out.println(flower1.getColor());
-    System.out.println(flower2.getColor());
-    System.out.println(tree1.getColor());
-    System.out.println(tree2.getColor());
+    garden.status();
+    garden.watering(40);
+    garden.status();
     //System.out.println(garden.toString());
     // forloop a listával, if else statement,kiiratom,hogy meg kell-e öntöznöm vagy nem.
   }
