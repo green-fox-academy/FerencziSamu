@@ -7,7 +7,7 @@ public class ApplesTest {
 
   @Test
   public void getAppleTest() {
-    assertTrue("Apple",true);
-
+    //assertTrue("Apple",true);
+    assertEquals("Apple",apple.getApple());
   }
 }
