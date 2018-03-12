@@ -29,6 +29,10 @@ public class Aircraft {
     return ammoStore;
   }
 
+  public int getNeededAmmo() {
+    return maxAmmo - currentAmmo;
+  }
+
   public String getType() {
     return type;
   }
