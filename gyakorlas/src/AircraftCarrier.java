@@ -5,6 +5,7 @@ public class AircraftCarrier {
   private int storeOfAmmo;
   private int hp;
   private List<Aircraft> list = new ArrayList<>();
+  private int allDamage;
 
   AircraftCarrier(int healthPoint, int initialAmmo) {
     storeOfAmmo = initialAmmo;
@@ -21,15 +22,23 @@ public class AircraftCarrier {
       return;
     }
     int totalNeedAmmo = calculateNeededAmmo();
-    if (storeOfAmmo < totalNeedAmmo){
+    if (storeOfAmmo < totalNeedAmmo) {
       fillPriority();
+    } else {
+      for (int i = 0; i < list.size(); i++) {
+        int ammo = 50;
+        list.get(i).refill(ammo);
+        storeOfAmmo -= ammo;
+      }
     }
   }
 
   private void fillPriority() {
     for (int i = 0; i < list.size(); i++) {
-      if(list.get(i).isPriority()){
-        
+      if (list.get(i).isPriority()) {
+        int ammo = 50;
+        list.get(i).refill(ammo);
+        storeOfAmmo -= ammo;
       }
     }
   }
@@ -40,6 +49,29 @@ public class AircraftCarrier {
       totalAmmoNeeded += list.get(i).getNeededAmmo();
     }
     return totalAmmoNeeded;
+  }
+
+  private void fight(AircraftCarrier aircraftCarrier) {
+    aircraftCarrier.hp = aircraftCarrier.hp - this.getAllDamage();
+
+  }
+
+  public int getAllDamage() {
+    int allDamage = 0;
+    for (int i = 0; i < list.size(); i++) {
+      allDamage += list.get(i).getDamage();
+    }
+    return allDamage;
+  }
+
+  public String getStatus(){
+    String status = "HP: " + hp+ ", Aircraft count: " + list.size() + ", Ammo " +
+        "Storage: " + storeOfAmmo + ", Total damage: " + getAllDamage() +"\n" +
+        "Aircrafts: \n";
+    for (int i = 0; i < list.size(); i++) {
+      status += list.get(i).getStatus();
+    }
+    return status;
   }
 }
 

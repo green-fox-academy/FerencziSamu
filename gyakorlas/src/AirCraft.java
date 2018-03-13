@@ -41,9 +41,9 @@ public class Aircraft {
     return baseDamage * currentAmmo;
   }
 
-  public void getStatus() {
-    System.out.println("Type " + type + ", Ammo: " + currentAmmo + ", Base Damage: " + baseDamage
-        + ", All Damage: " + getDamage());
+  public String getStatus() {
+    return "Type " + type + ", Ammo: " + currentAmmo + ", Base Damage: " + baseDamage
+        + ", All Damage: " + getDamage();
   }
 
   public boolean isPriority() {
