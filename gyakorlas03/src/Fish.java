@@ -7,7 +7,7 @@ public class Fish {
   public String getStatus() {
     return name + ", weight: " + weight + ", colour: " + colour;
   }
-  
+
   public void feed() {
 
   }
