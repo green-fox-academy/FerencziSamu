@@ -21,6 +21,10 @@ public class FishTank {
     aquarium.addFish(new Clownfish("Nemo", 5, "orange", "white"));
 
     System.out.println(aquarium.getStatusAq());
+
+    aquarium.feedTheFishes();
+
+    System.out.println(aquarium.getStatusAq());
 //
 //    // Nami, weight: 9, color: pink
 //    // Dory, weight: 8, color: blue, short-term memory loss: true
