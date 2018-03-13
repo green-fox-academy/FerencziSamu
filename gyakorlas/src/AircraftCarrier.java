@@ -51,9 +51,8 @@ public class AircraftCarrier {
     return totalAmmoNeeded;
   }
 
-  private void fight(AircraftCarrier aircraftCarrier) {
+  public void fight(AircraftCarrier aircraftCarrier) {
     aircraftCarrier.hp = aircraftCarrier.hp - this.getAllDamage();
-
   }
 
   public int getAllDamage() {
@@ -69,7 +68,7 @@ public class AircraftCarrier {
         "Storage: " + storeOfAmmo + ", Total damage: " + getAllDamage() +"\n" +
         "Aircrafts: \n";
     for (int i = 0; i < list.size(); i++) {
-      status += list.get(i).getStatus();
+      status += list.get(i).getStatus()+ "\n";
     }
     return status;
   }
