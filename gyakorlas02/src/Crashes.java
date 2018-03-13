@@ -26,15 +26,16 @@ public class Crashes {
     int countOfGoodWeathers = 0;
     try {
       lines = Files.readAllLines(filePath);
+//      System.out.println(lines.size());
       for (int i = 0; i < lines.size(); i++) {
         if (lines.get(i).contains("CLOUDY") || lines.get(i).contains("CLEAR")) {
           countOfGoodWeathers += 1;
         }
-
       }
     } catch (IOException e) {
       e.printStackTrace();
     }
-    return "The amount of crashes at good weather conditions: " + countOfGoodWeathers;
+    return "The amount of crashes at good weather conditions: " + countOfGoodWeathers + "\n" +
+        "The amount of crashes at bad weather conditions: " + (lines.size() - countOfGoodWeathers);
   }
 }
