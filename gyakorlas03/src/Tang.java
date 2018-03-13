@@ -4,4 +4,9 @@ public class Tang extends Fish {
     super(name,weight,colour);
     this.memoryLoss = memoryLoss;
   }
+
+  @Override
+  public String getStatus() {
+    return super.getStatus() + ", short-term memory loss: " + memoryLoss;
+  }
 }

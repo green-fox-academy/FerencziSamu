@@ -30,4 +30,11 @@ public class Aquarium {
   public void addFish(Fish fish){
     list.add(fish);
   }
+  public void removeOversizedFishes(){
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i).getWeight() >= 11){
+        list.remove(i);
+      }
+    }
+  }
 }

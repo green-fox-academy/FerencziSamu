@@ -25,6 +25,10 @@ public class FishTank {
     aquarium.feedTheFishes();
 
     System.out.println(aquarium.getStatusAq());
+
+    aquarium.removeOversizedFishes();
+
+    System.out.println(aquarium.getStatusAq());
 //
 //    // Nami, weight: 9, color: pink
 //    // Dory, weight: 8, color: blue, short-term memory loss: true

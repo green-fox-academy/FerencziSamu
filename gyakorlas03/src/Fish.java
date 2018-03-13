@@ -12,10 +12,6 @@ public class Fish {
     weight++;
   }
 
-  public Fish() {
-
-  }
-
   public Fish(String name, int weight, String colour) {
     this.name = name;
     this.weight = weight;

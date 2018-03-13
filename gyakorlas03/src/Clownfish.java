@@ -4,4 +4,9 @@ public class Clownfish extends Fish {
     super(name, weight, colour);
     this.colour2 = colour2;
   }
+
+  @Override
+  public String getStatus() {
+    return super.getStatus() + ", Stripe colour: " + colour2;
+  }
 }
