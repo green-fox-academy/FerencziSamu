@@ -15,24 +15,25 @@ public class FishTank {
 
     Aquarium aquarium = new Aquarium();
 
-    aquarium.add(new Koi("Nami", 9, "pink"));
-    aquarium.add(new Tang("Dory", 8, "blue", true));
-    aquarium.add(new Tang("Bubbles", 10, "yellow", false));
-    aquarium.add(new Clownfish("Nemo", 5, "orange", "white"));
+    aquarium.addFish(new Koi("Nami", 9, "pink"));
+//    aquarium.addFish(new Tang("Dory", 8, "blue", true));
+//    aquarium.addFish(new Tang("Bubbles", 10, "yellow", false));
+//    aquarium.addFish(new Clownfish("Nemo", 5, "orange", "white"));
 
-    System.out.println(aquarium.status());
-
-    // Nami, weight: 9, color: pink
-    // Dory, weight: 8, color: blue, short-term memory loss: true
-    // Bubbles, weight: 10, color: yellow, short-term memory loss: false
-    // Nemo, weight: 5, color: orange, stripe color: white
-
-    aquarium.feed();
-    aquarium.removeOversizedFishes();
-
-    System.out.println(aquarium.status());
+    System.out.println(aquarium.getStatusAq());
+//
+//    // Nami, weight: 9, color: pink
+//    // Dory, weight: 8, color: blue, short-term memory loss: true
+//    // Bubbles, weight: 10, color: yellow, short-term memory loss: false
+//    // Nemo, weight: 5, color: orange, stripe color: white
+//
+//    aquarium.feed();
+//    aquarium.removeOversizedFishes();
+//
+//    System.out.println(aquarium.status());
 
     // Dory, weight: 9, color: blue, short-term memory loss: true
     // Nemo, weight: 6, color: orange, stripe color: white
+
   }
 }

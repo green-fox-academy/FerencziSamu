@@ -11,4 +11,14 @@ public class Fish {
   public void feed() {
 
   }
+
+  public Fish() {
+
+  }
+
+  public Fish(String name, int weight, String colour) {
+    this.name = name;
+    this.weight = weight;
+    this.colour = colour;
+  }
 }

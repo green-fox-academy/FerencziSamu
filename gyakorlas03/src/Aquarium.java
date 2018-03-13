@@ -21,4 +21,13 @@ public class Aquarium {
       list.get(i).feed();
     }
   }
+  public String getStatusAq(){
+    String status = "";
+    for (int i = 0; i < list.size(); i++) {
+     status += list.get(i).getStatus()+ "\n";
+    } return status;
+  }
+  public void addFish(Fish fish){
+    list.add(fish);
+  }
 }
