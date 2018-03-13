@@ -16,9 +16,9 @@ public class FishTank {
     Aquarium aquarium = new Aquarium();
 
     aquarium.addFish(new Koi("Nami", 9, "pink"));
-//    aquarium.addFish(new Tang("Dory", 8, "blue", true));
-//    aquarium.addFish(new Tang("Bubbles", 10, "yellow", false));
-//    aquarium.addFish(new Clownfish("Nemo", 5, "orange", "white"));
+    aquarium.addFish(new Tang("Dory", 8, "blue", true));
+    aquarium.addFish(new Tang("Bubbles", 10, "yellow", false));
+    aquarium.addFish(new Clownfish("Nemo", 5, "orange", "white"));
 
     System.out.println(aquarium.getStatusAq());
 //
