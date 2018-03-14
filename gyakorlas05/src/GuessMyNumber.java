@@ -38,6 +38,5 @@ public class GuessMyNumber {
     } else {
       System.out.println("You have " + lives + " left.");
     }
-
   }
 }
