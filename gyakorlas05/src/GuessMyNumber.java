@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class GuessMyNumber {
   public static void main(String[] args) {
+    int lives = 5;
 
     Scanner scanner = new Scanner(System.in);
 
@@ -13,18 +14,30 @@ public class GuessMyNumber {
 //    System.out.println(numberOfComputer);
     System.out.println("Enter a guess!");
 
-
     int guess = scanner.nextInt();
 
-    while (guess != numberOfComputer) {
+    while (guess != numberOfComputer && lives != 0) {
       if (guess > numberOfComputer) {
-        System.out.println("Too high! Guess again!");
+        lives--;
+        if (lives == 0) {
+          break;
+        }
+        System.out.println("Too high! You have " + lives + " lives left.");
         guess = scanner.nextInt();
       } else if (guess < numberOfComputer) {
-        System.out.println("Too low! Guess again!");
+        lives--;
+        if (lives == 0) {
+          break;
+        }
+        System.out.println("Too low! You have " + lives + " lives left.");
         guess = scanner.nextInt();
       }
     }
-    System.out.println("Congratulations! You won!");
+    if (guess == numberOfComputer) {
+      System.out.println("Congratulations! You won!");
+    } else {
+      System.out.println("You have " + lives + " left.");
+    }
+
   }
 }
