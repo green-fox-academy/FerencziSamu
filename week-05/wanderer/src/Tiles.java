@@ -39,6 +39,6 @@ public class Tiles extends PositionedImage {
       fileName = "img/wall.png";
     }
   }
-
-
 }
+
+

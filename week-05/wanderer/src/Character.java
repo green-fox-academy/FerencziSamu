@@ -62,5 +62,6 @@ public class Character extends PositionedImage {
   public int getSIZE() {
     return SIZE;
   }
+
 }
 
