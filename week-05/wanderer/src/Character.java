@@ -11,6 +11,43 @@ public class Character extends PositionedImage {
 
   }
 
+  public void turnRight(Map map) {
+    int newX = posX + getSIZE();
+    int newY = posY;
+    if (newX < 720 && map.getMazeIndex(newX, newY) == 0) {
+      posX = newX;
+      posY = newY;
+    }
+
+  }
+
+  public void turnLeft(Map map) {
+    int newX = posX - getSIZE();
+    int newY = posY;
+    if (newX >= 0 && map.getMazeIndex(newX, newY) == 0) {
+      posX = newX;
+      posY = newY;
+    }
+  }
+
+  public void goUp(Map map) {
+    int newX = posX;
+    int newY = posY - getSIZE();
+    if (newY >= 0 && map.getMazeIndex(newX, newY) == 0) {
+      posX = newX;
+      posY = newY;
+    }
+  }
+
+  public void goDown(Map map) {
+    int newX = posX;
+    int newY = posY + getSIZE();
+    if (newY < 720 && map.getMazeIndex(newX, newY) == 0) {
+      posX = newX;
+      posY = newY;
+    }
+  }
+
   public int getHealthPoint() {
     return healthPoint;
   }

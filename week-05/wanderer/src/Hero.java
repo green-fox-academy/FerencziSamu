@@ -1,7 +1,8 @@
+import java.awt.event.KeyEvent;
 import java.util.Random;
 
 public class Hero extends Character {
-
+  private int moveCounter;
   public Hero() {
     Random random = new Random();
     int n = random.nextInt(6) + 3;
@@ -12,46 +13,39 @@ public class Hero extends Character {
     setSkin("hero-down.png");
   }
 
-  public void turnRight(Map map) {
-    setSkin("hero-right.png");
-    int newX = posX + getSIZE();
-    int newY = posY;
-    if (newX < 720 && map.getMazeIndex(newX, newY) == 0) {
-      posX = newX;
-      posY = newY;
+  public void move(KeyEvent e, Map map) {
+    int oldX = posX;
+    int oldY = posY;
+    if (e.getKeyCode() == KeyEvent.VK_UP) {
+      goUp(map);
+      checkPos(oldX,oldY);
+      setSkin("hero-up.png");
+    } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+      goDown(map);
+      checkPos(oldX,oldY);
+      setSkin("hero-down.png");
+    } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+      turnLeft(map);
+      checkPos(oldX,oldY);
+      setSkin("hero-left.png");
+    } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+      turnRight(map);
+      checkPos(oldX,oldY);
+      setSkin("hero-right.png");
     }
-
   }
-
-  public void turnLeft(Map map) {
-    setSkin("hero-left.png");
-    int newX = posX - getSIZE();
-    int newY = posY;
-    if (newX >= 0 && map.getMazeIndex(newX, newY) == 0) {
-      posX = newX;
-      posY = newY;
-    }
-  }
-
-  public void goUp(Map map) {
-    setSkin("hero-up.png");
-    int newX = posX;
-    int newY = posY - getSIZE();
-    if (newY >= 0 && map.getMazeIndex(newX, newY) == 0) {
-      posX = newX;
-      posY = newY;
+  public void checkPos(int oldX, int oldY) {
+    if (oldX != posX || oldY != posY) {
+      moveCounter++;
     }
   }
 
-  public void goDown(Map map) {
-    setSkin("hero-down.png");
-    int newX = posX;
-    int newY = posY + getSIZE();
-    if (newY < 720 && map.getMazeIndex(newX, newY) == 0) {
-      posX = newX;
-      posY = newY;
-    }
+  public int getMoveCounter() {
+    return moveCounter;
   }
 
+  public void setMoveCounter(int moveCounter) {
+    this.moveCounter = moveCounter;
+  }
 }
 

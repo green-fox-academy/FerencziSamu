@@ -55,15 +55,7 @@ public class Map {
     return levelDesign[posY / 72][posX / 72];
   }
 
-  //  public void mazeChanger() {
-//    for (int i = 0; i < 10; i++) {
-//      for (int j = 0; j < 10; j++) {
-//        if (!map.get(i).get(j).isFloor()) {
-//        map.get(i).get(j).setOccupied(true);
-//        }
-//      }
-//    }
-//  }
+
   public void toSpawn() {
     Random random = new Random();
     int n = random.nextInt(3) + 3;
