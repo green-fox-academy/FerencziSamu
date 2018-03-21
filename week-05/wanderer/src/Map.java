@@ -48,4 +48,8 @@ public class Map {
       }
     }
   }
+
+  public int getMazeIndex(int posX,int posY) {
+    return levelDesign[posY / 72][posX / 72];
+  }
 }

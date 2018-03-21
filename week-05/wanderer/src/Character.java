@@ -5,6 +5,7 @@ public class Character extends PositionedImage {
   private int level;
   private String skin;
   private boolean isDead;
+  private int SIZE = 72;
 
   public Character() {
 
@@ -58,5 +59,8 @@ public class Character extends PositionedImage {
     isDead = dead;
   }
 
+  public int getSIZE() {
+    return SIZE;
+  }
 }
 

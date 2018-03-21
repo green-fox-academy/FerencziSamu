@@ -7,6 +7,10 @@ import java.awt.event.KeyListener;
 public class Board extends JComponent implements KeyListener {
   Map map = new Map();
   Hero hero = new Hero();
+  Boss boss = new Boss();
+  Skeleton skeleton1 = new Skeleton();
+  Skeleton skeleton2 = new Skeleton();
+  Skeleton skeleton3 = new Skeleton();
 
   public Board() {
     map.fillMap();
@@ -19,6 +23,10 @@ public class Board extends JComponent implements KeyListener {
     super.paint(graphics);
     map.drawMap(graphics);
     hero.draw(graphics,hero.getSkin());
+    boss.draw(graphics,boss.getSkin());
+    skeleton1.draw(graphics,skeleton1.getSkin());
+    skeleton2.draw(graphics,skeleton2.getSkin());
+    skeleton3.draw(graphics,skeleton3.getSkin());
   }
 
   public static void main(String[] args) {
@@ -42,13 +50,13 @@ public class Board extends JComponent implements KeyListener {
   @Override
   public void keyReleased(KeyEvent e) {
     if (e.getKeyCode() == KeyEvent.VK_UP) {
-      hero.goUp();
+      hero.goUp(map);
     } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-      hero.goDown();
+      hero.goDown(map);
     } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
       hero.turnLeft(map);
     } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-      hero.turnRight();
+      hero.turnRight(map);
     }
     repaint();
   }

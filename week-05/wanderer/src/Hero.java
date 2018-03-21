@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class Hero extends Character {
-  private int SIZE = 72;
+
   public Hero() {
     Random random = new Random();
     int n = random.nextInt(6) + 3;
@@ -12,36 +12,45 @@ public class Hero extends Character {
     setSkin("hero-down.png");
   }
 
-  public void turnRight() {
+  public void turnRight(Map map) {
     setSkin("hero-right.png");
-    posX += SIZE;
+    int newX = posX + getSIZE();
+    int newY = posY;
+    if (map.getMazeIndex(newX,newY) == 0) {
+      posX = newX;
+      posY = newY;
+    }
 
   }
 
   public void turnLeft(Map map) {
     setSkin("hero-left.png");
-    int newX = posX - SIZE;
+    int newX = posX - getSIZE();
     int newY = posY;
-
-    if (canMoveHere(newX, newY, map)) {
+    if (map.getMazeIndex(newX, newY) == 0) {
       posX = newX;
       posY = newY;
     }
   }
 
-  private boolean canMoveHere(int newX, int newY, Map map) {
-
-    return false;
-  }
-
-  public void goUp() {
+  public void goUp(Map map) {
     setSkin("hero-up.png");
-    posY -= SIZE;
+    int newX = posX;
+    int newY = posY - getSIZE();
+    if (map.getMazeIndex(newX, newY) == 0) {
+      posX = newX;
+      posY = newY;
+    }
   }
 
-  public void goDown() {
+  public void goDown(Map map) {
     setSkin("hero-down.png");
-    posY += SIZE;
+    int newX = posX;
+    int newY = posY + getSIZE();
+    if (map.getMazeIndex(newX,newY) == 0) {
+      posX = newX;
+      posY = newY;
+    }
   }
 
 }
