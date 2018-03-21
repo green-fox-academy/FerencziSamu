@@ -16,7 +16,7 @@ public class Hero extends Character {
     setSkin("hero-right.png");
     int newX = posX + getSIZE();
     int newY = posY;
-    if (map.getMazeIndex(newX,newY) == 0) {
+    if (newX < 720 && map.getMazeIndex(newX, newY) == 0) {
       posX = newX;
       posY = newY;
     }
@@ -27,7 +27,7 @@ public class Hero extends Character {
     setSkin("hero-left.png");
     int newX = posX - getSIZE();
     int newY = posY;
-    if (map.getMazeIndex(newX, newY) == 0) {
+    if (newX >= 0 && map.getMazeIndex(newX, newY) == 0) {
       posX = newX;
       posY = newY;
     }
@@ -37,7 +37,7 @@ public class Hero extends Character {
     setSkin("hero-up.png");
     int newX = posX;
     int newY = posY - getSIZE();
-    if (map.getMazeIndex(newX, newY) == 0) {
+    if (newY >= 0 && map.getMazeIndex(newX, newY) == 0) {
       posX = newX;
       posY = newY;
     }
@@ -47,7 +47,7 @@ public class Hero extends Character {
     setSkin("hero-down.png");
     int newX = posX;
     int newY = posY + getSIZE();
-    if (map.getMazeIndex(newX,newY) == 0) {
+    if (newY < 720 && map.getMazeIndex(newX, newY) == 0) {
       posX = newX;
       posY = newY;
     }
