@@ -46,6 +46,9 @@ public class Board extends JComponent implements KeyListener {
     ((Hero) map.characters.get(0)).move(e,map);
     if (((Hero) map.characters.get(0)).getMoveCounter() == 2) {
       ((Boss) map.characters.get(1)).move(map);
+      for (int i = 2; i < map.characters.size(); i++) {
+        ((Skeleton) map.characters.get(i)).move(map);
+      }
       ((Hero) map.characters.get(0)).setMoveCounter(0);
     }
     repaint();

@@ -21,15 +21,19 @@ public class Boss extends Character {
 
   public void move(Map map) {
     Random random = new Random();
-    int o = random.nextInt(4) + 1; // egytől négyig megy. MAGYAR IGEN!
-    if (o == 1) {
-      turnLeft(map);
-    } else if (o == 2) {
-      turnRight(map);
-    } else if (o == 3) {
-      goDown(map);
-    } else {
-      goUp(map);
+    int oldX = posX;
+    int oldY = posY;
+    while (!checkPos(oldX,oldY)) {
+      int o = random.nextInt(4) + 1; // egytől négyig megy. MAGYAR IGEN!
+      if (o == 1) {
+        turnLeft(map);
+      } else if (o == 2) {
+        turnRight(map);
+      } else if (o == 3) {
+        goDown(map);
+      } else {
+        goUp(map);
+      }
     }
   }
 }

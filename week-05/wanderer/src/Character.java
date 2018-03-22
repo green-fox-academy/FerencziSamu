@@ -100,5 +100,11 @@ public class Character extends PositionedImage {
     return SIZE;
   }
 
+  public boolean checkPos(int oldX, int oldY) {
+    if (oldX != posX || oldY != posY) {
+      return true;
+    } return false;
+  }
+
 }
 

@@ -3,6 +3,7 @@ import java.util.Random;
 
 public class Hero extends Character {
   private int moveCounter;
+
   public Hero() {
     Random random = new Random();
     int n = random.nextInt(6) + 3;
@@ -18,27 +19,31 @@ public class Hero extends Character {
     int oldY = posY;
     if (e.getKeyCode() == KeyEvent.VK_UP) {
       goUp(map);
-      checkPos(oldX,oldY);
+      if (checkPos(oldX, oldY)) {
+        moveCounter++;
+      }
       setSkin("hero-up.png");
     } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
       goDown(map);
-      checkPos(oldX,oldY);
+      if (checkPos(oldX, oldY)) {
+        moveCounter++;
+      }
       setSkin("hero-down.png");
     } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
       turnLeft(map);
-      checkPos(oldX,oldY);
+      if (checkPos(oldX, oldY)) {
+        moveCounter++;
+      }
       setSkin("hero-left.png");
     } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
       turnRight(map);
-      checkPos(oldX,oldY);
+      if (checkPos(oldX, oldY)) {
+        moveCounter++;
+      }
       setSkin("hero-right.png");
     }
   }
-  public void checkPos(int oldX, int oldY) {
-    if (oldX != posX || oldY != posY) {
-      moveCounter++;
-    }
-  }
+
 
   public int getMoveCounter() {
     return moveCounter;
