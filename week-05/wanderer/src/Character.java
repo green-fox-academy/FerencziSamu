@@ -18,7 +18,6 @@ public class Character extends PositionedImage {
       posX = newX;
       posY = newY;
     }
-
   }
 
   public void turnLeft(Map map) {
@@ -103,8 +102,8 @@ public class Character extends PositionedImage {
   public boolean checkPos(int oldX, int oldY) {
     if (oldX != posX || oldY != posY) {
       return true;
-    } return false;
+    }
+    return false;
   }
-
 }
 

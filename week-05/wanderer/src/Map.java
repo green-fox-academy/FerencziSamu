@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Random;
 
 public class Map {
-  private boolean isOccupied;
   public static int SIZE = 72;
   ArrayList<Character> characters = new ArrayList<>();
 
@@ -22,10 +21,6 @@ public class Map {
   };
 
   private List<List<Tiles>> map = new ArrayList<>();
-
-  public List<List<Tiles>> getMap() {
-    return map;
-  }
 
   public void fillMap() {
     for (int i = 0; i < 10; i++) {
