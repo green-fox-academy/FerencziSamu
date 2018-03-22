@@ -10,7 +10,7 @@ public class Board extends JComponent implements KeyListener {
   public Board() {
     map.fillMap();
     map.toSpawn();
-    setPreferredSize(new Dimension(720, 720));
+    setPreferredSize(new Dimension(1020, 720));
     setVisible(true);
   }
 

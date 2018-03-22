@@ -76,7 +76,7 @@ public class Map {
   }
 
   public void tileOccupiedWithMonster() {
-    for (int i = 0; i < characters.size(); i++) {
+    for (int i = 1; i < characters.size(); i++) {
       map.get(characters.get(i).posY / 72).get(characters.get(i).posX / 72).setOccupied(true);
     }
   }
