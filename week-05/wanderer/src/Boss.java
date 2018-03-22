@@ -16,7 +16,6 @@ public class Boss extends Character {
     setDead(false);
     setPosX(getSIZE() * u);
     setPosY(getSIZE() * m);
-
   }
 
   public void move(Map map) {

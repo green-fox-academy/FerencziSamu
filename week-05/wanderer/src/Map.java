@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Map {
+  private boolean isOccupied;
   public static int SIZE = 72;
   ArrayList<Character> characters = new ArrayList<>();
 
@@ -19,6 +20,7 @@ public class Map {
       {1, 1, 1, 0, 1, 1, 1, 0, 1, 0},
       {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
   };
+
   private List<List<Tiles>> map = new ArrayList<>();
 
   public List<List<Tiles>> getMap() {
@@ -55,13 +57,13 @@ public class Map {
     return levelDesign[posY / 72][posX / 72];
   }
 
-
   public void toSpawn() {
     Random random = new Random();
     int n = random.nextInt(3) + 3;
     characters.add(new Hero());
     do {
       characters.add(new Boss());
+      tileOccupiedWithMonster();
       if (characters.size() > 2) {
         characters.remove(1);
       }
@@ -69,10 +71,18 @@ public class Map {
     for (int i = 0; i < n; i++) {
       do {
         characters.add(new Skeleton());
+        tileOccupiedWithMonster();
         if (characters.size() > i + 3) {
           characters.remove(i + 2);
         }
       } while (getMazeIndex(characters.get(i + 2).posX, characters.get(i + 2).posY) == 1);
+      tileOccupiedWithMonster();
+    }
+  }
+
+  public void tileOccupiedWithMonster() {
+    for (int i = 0; i < characters.size(); i++) {
+      map.get(characters.get(i).posY / 72).get(characters.get(i).posX / 72).setOccupied(true);
     }
   }
 }

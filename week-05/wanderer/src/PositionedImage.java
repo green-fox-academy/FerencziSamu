@@ -18,14 +18,6 @@ public class PositionedImage {
     }
   }
 
-  public int getPosX() {
-    return posX;
-  }
-
-  public int getPosY() {
-    return posY;
-  }
-
   public void setPosX(int posX) {
     this.posX = posX;
   }
