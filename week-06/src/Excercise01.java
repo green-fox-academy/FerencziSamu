@@ -39,7 +39,7 @@ public class Excercise01 {
     // Write a Stream Expression to find the uppercase characters in a string!
     String string = "kabAdsdwesSdasS";
     string.chars().filter(c -> Character.isUpperCase(c))
-        .forEach(c -> System.out.print((char)c));
+        .forEach(c -> System.out.print((char) c));
     System.out.println();
     System.out.println();
 
@@ -53,10 +53,18 @@ public class Excercise01 {
     // Write a Stream Expression to find the frequency of characters in a given string!
     String string2 = "asdpepemaksdklasdmeasxxsssasdawdd";
     string2.chars()
-        .mapToObj(c -> Character.toString((char)c))
+        .mapToObj(c -> Character.toString((char) c))
         .collect(Collectors.groupingBy(v -> v, Collectors.counting()))
-        .forEach((c,b) -> System.out.println (c + " = " + b ));
-    // 
+        .forEach((c, b) -> System.out.println(c + " = " + b));
+    System.out.println();
+
+    // Write a Stream Expression to find the frequency of numbers in the following array:
+    ArrayList<Integer> numbers2 = new ArrayList<>(Arrays.asList(5, 9, 1, 2, 3, 7, 5, 6, 7, 3, 7,
+        6, 8, 5, 4, 9, 6, 2));
+
+    numbers2.stream()
+        .collect(Collectors.groupingBy(v -> v, Collectors.counting()))
+        .forEach((c, b) -> System.out.println(c + " = " + b));
   }
 
 }
