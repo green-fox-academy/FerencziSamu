@@ -1,4 +1,4 @@
-package Candyshop;
+package candyshop;
 
 public class TakeMeToThe {
   public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class TakeMeToThe {
     System.out.println(candyShop);
     // Should print out:
     // "Invetory: 1 candies, 1 lollipops, Income: 35$, Sugar: 285gr"
-    CandyShop.buySugar(300);
+    candyShop.buySugar(300);
     System.out.println(candyShop);
     // Should print out:
     // "Invetory: 1 candies, 1 lollipops, Income: 5$, Sugar: 315gr"
