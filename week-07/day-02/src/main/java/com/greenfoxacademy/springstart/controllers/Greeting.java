@@ -1,8 +1,9 @@
 package com.greenfoxacademy.springstart.controllers;
 
 public class Greeting {
-  String content;
   long id;
+  String content;
+
 
   public Greeting(long id,String content) {
     this.id = id;
