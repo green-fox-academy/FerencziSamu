@@ -8,12 +8,12 @@
 <body>
 <h1>Welcome to Programmer Fox Club!</h1>
 <p>Please provide a name, so you can associate it to your pet!</p>
-<form action="/my-handling-form-page" method="post">
+<form action="#" th:action="@{login}" method="post">
     <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="pet_name">
+        <input type="text" id="name" name="name" placeholder="Enter your pet's name here">
         <button th:type="submit" th:value="submit">Go</button>
     </div>
-
+</form>
 </body>
 </html>

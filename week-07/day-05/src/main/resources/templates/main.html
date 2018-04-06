@@ -3,11 +3,13 @@
 <head>
     <link rel="stylesheet" th:href="@{/style.css}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Index</title>
+    <title>Logged in</title>
 </head>
 <body background = "background.jpg">
-<h1>
-<a href="/login">Click here for Login!</a>
-</h1>
+<h2 th:text="'Hello, ' + ${name} + '!'"></h2>
+<a href="https://worldofwarcraft.com/en-gb/character/ravencrest/kr%C3%BCpteia">
+   <img src="minion.jpg" alt="your character" style="width: 250px;height: 250px;border: 0px;">
+</a>
+
 </body>
 </html>

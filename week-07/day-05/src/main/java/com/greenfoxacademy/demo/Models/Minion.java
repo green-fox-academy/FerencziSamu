@@ -1,10 +1,15 @@
 package com.greenfoxacademy.demo.Models;
 
-public class Fox {
+
+public class Minion {
   private String name;
 
-  public Fox () {
-    
+  public Minion() {
+
+  }
+
+  public Minion(String name) {
+    this.name = name;
   }
 
   public String getName() {
