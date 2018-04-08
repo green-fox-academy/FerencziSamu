@@ -7,14 +7,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 
 @Controller
 public class MainController {
-  List<Minion> listOfMinions = new ArrayList<>(Arrays.asList());
+  List<Minion> listOfMinions = new ArrayList<>();
 
   @RequestMapping(value = "/")
   public String indexPageLoad() {
@@ -33,13 +31,12 @@ public class MainController {
   }
 
   @GetMapping(value = "/main")
-  public String loadsTheMainPageForYou(@RequestParam(value = "name", required = true) String name, Model model) {
-    AtomicLong id = new AtomicLong(0);
+  public String loadsTheMainPageForYou(@RequestParam(value = "name") String name, Model model) {
     if (nameChecker(name)) {
-      model.addAttribute("name", listOfMinions.get(id.intValue()).getName());
+      model.addAttribute("name", name);
       return "main";
     } else {
-      Minion minion = new Minion(name, id.addAndGet(1));
+      Minion minion = new Minion(name);
       listOfMinions.add(minion);
       return "redirect:/login";
     }

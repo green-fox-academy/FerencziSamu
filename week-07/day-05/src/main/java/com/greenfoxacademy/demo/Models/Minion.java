@@ -1,24 +1,25 @@
 package com.greenfoxacademy.demo.Models;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Minion {
+  private static final AtomicInteger ATOMIC_INTEGER = new AtomicInteger(1);
   private String name;
   private List<String> listOfTricks;
   private String food;
   private String drink;
-  private Long id;
+  private Integer id;
 
   public Minion() {
 
   }
 
-  public Minion(String name,Long id) {
+  public Minion(String name) {
     this.name = name;
-    listOfTricks = new ArrayList<>(Arrays.asList());
-    this.id = id;
+    listOfTricks = new ArrayList<>();
+    this.id = ATOMIC_INTEGER.getAndIncrement();
   }
 
   public String getName() {
