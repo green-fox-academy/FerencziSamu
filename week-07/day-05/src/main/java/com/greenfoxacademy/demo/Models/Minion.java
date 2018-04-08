@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Minion {
+
   private static final AtomicInteger ATOMIC_INTEGER = new AtomicInteger(1);
+
   private String name;
   private List<String> listOfTricks;
   private String food;
@@ -17,6 +19,7 @@ public class Minion {
   }
 
   public Minion(String name) {
+    this();
     this.name = name;
     listOfTricks = new ArrayList<>();
     this.id = ATOMIC_INTEGER.getAndIncrement();
