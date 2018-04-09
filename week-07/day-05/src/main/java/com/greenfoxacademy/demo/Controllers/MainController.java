@@ -52,4 +52,10 @@ public class MainController {
       return "redirect:/login";
     }
   }
+
+  @GetMapping(value = "main/updated")
+  public String loadsDetailedPageForYou(@ModelAttribute(value = "name")String name, Model model) {
+    model.addAttribute("name",name);
+    return "updated";
+  }
 }
