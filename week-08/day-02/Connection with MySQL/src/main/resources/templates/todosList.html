@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" th:href="@{/style.css}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Todo CRUD App</title>
+    <style>
+        td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
-<body background="static/background.jpg">
+<body background="background.jpg">
 <h1 th:text="'Todos for today:'"></h1>
+<table>
     <tr id="tr_1">
-        <td>ID</td>
-        <td>Action</td>
-        <td>Done</td>
-        <td>Urgent</td>
+        <th>ID</th>
+        <th>Action</th>
+        <th>Done</th>
+        <th>Urgent</th>
     </tr>
-<li th:each="todo_object : ${todo_objects}"
-    th:text="${todo_object.getTitle()}"></li>
+<tr th:each="todo_object : ${todo_objects}">
+    <td th:text="${todo_object.getId()}"></td>
+    <td th:text="${todo_object.getTitle()}"></td>
+    <td th:text="${todo_object.isDone()}"></td>
+    <td th:text="${todo_object.isUrgent()}"></td>
+</tr>
+</table>
 </body>
 </html>

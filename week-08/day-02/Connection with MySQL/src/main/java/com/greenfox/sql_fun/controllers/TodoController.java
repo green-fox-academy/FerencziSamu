@@ -17,6 +17,9 @@ public class TodoController {
   @RequestMapping(value = {"/","/list"})
   public String todoList(Model model) {
     model.addAttribute("todo_objects", todoInterface.findAll());
+    model.addAttribute("todo_Id", todoInterface.findAll());
+    model.addAttribute("todo_Urgent", todoInterface.findAll());
+    model.addAttribute("todo_Done", todoInterface.findAll());
     return "todosList";
   }
 
