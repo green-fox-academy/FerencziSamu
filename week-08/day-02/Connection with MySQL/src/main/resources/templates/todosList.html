@@ -10,7 +10,7 @@
         }
     </style>
 </head>
-<body background="background.jpg">
+<body>
 <h1 th:text="'Todos for today:'"></h1>
 <table>
     <tr id="tr_1">
@@ -19,11 +19,11 @@
         <th>Done</th>
         <th>Urgent</th>
     </tr>
-<tr th:each="todo_object : ${todo_objects}">
-    <td th:text="${todo_object.getId()}"></td>
-    <td th:text="${todo_object.getTitle()}"></td>
-    <td th:text="${todo_object.isDone()}"></td>
-    <td th:text="${todo_object.isUrgent()}"></td>
+<tr th:each="todo : ${todos}">
+    <td th:text="${todo.getId()}"></td>
+    <td th:text="${todo.getTitle()}"></td>
+    <td th:text="${todo.isDone()}"></td>
+    <td th:text="${todo.isUrgent()}"></td>
 </tr>
 </table>
 </body>
