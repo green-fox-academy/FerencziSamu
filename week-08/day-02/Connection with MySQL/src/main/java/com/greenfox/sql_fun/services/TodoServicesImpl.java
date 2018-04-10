@@ -1,7 +1,7 @@
 package com.greenfox.sql_fun.services;
 
 import com.greenfox.sql_fun.models.Todo;
-import com.greenfox.sql_fun.repositories.TodoInterface;
+import com.greenfox.sql_fun.repositories.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,18 +12,23 @@ import java.util.List;
 public class TodoServicesImpl implements TodoService {
 
   @Autowired
-  TodoInterface todoInterface;
+  TodoRepository todoRepository;
 
   @Override
   public List<Todo> findActives() {
     List<Todo> todos = new ArrayList<>();
-    todoInterface.findAll().forEach(todos::add);
+    todoRepository.findAll().forEach(todos::add);
     for (int i = 0; i < todos.size(); i++) {
       if (todos.get(i).isDone()) {
         todos.remove(i);
       }
     }
     return todos;
+  }
+
+  @Override
+  public void saveTodo(Todo todo) {
+    todoRepository.save(todo);
   }
 
 }

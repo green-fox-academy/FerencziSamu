@@ -9,5 +9,5 @@ import java.util.List;
 @Service
 public interface TodoService {
   List<Todo> findActives();
-
+  void saveTodo(Todo todo);
 }

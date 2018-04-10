@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1 th:text="'Add new todo'"></h1>
-<form action="#" th:action="@{add}" method="post">
+<form action="#" th:action="@{add}" method="post" th:object="${todo}">
     <div>
         <input type="text" id="title" name="title" placeholder="Enter your todo here" autofocus>
     </div>

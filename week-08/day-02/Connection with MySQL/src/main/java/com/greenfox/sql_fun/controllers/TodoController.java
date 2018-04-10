@@ -1,21 +1,19 @@
 package com.greenfox.sql_fun.controllers;
 
-import com.greenfox.sql_fun.repositories.TodoInterface;
+import com.greenfox.sql_fun.models.Todo;
+import com.greenfox.sql_fun.repositories.TodoRepository;
 import com.greenfox.sql_fun.services.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping(value = "/todo")
 public class TodoController {
 
   @Autowired
-  TodoInterface todoInterface;
+  TodoRepository todoRepository;
 
   @Autowired
   TodoService todoService;
@@ -26,19 +24,20 @@ public class TodoController {
     if (isActive) {
       model.addAttribute("todos", todoService.findActives());
     } else {
-      model.addAttribute("todos", todoInterface.findAll());
+      model.addAttribute("todos", todoRepository.findAll());
     }
     return "todosList";
   }
 
   @PostMapping(value = "/add")
-  public String addingNewTodo(Model model, @ModelAttribute(value = "title")String title) {
-    model.addAttribute("title",title);
-    return "add";
+  public String addingNewTodo(@ModelAttribute("todo")Todo todo) {
+    todoService.saveTodo(todo);
+    return "redirect:/todo/";
   }
 
-  @RequestMapping(value = "/add")
-  public String addingNewTodo(){
-    return "redirect:todoList";
+  @GetMapping(value = "/add")
+  public String showingNewTodo(Model model){
+    model.addAttribute("todo", new Todo());
+    return "add";
   }
 }
