@@ -1,4 +1,4 @@
-package com.greenfox.h2;
+package com.greenfox.h2.Models;
 
 public class Todo {
 
