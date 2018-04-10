@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Todo CRUD App</title>
+</head>
+<body background="background.jpg">
+<h1 th:text="'Todos for today:'"></h1>
+<p>
+<li th:each="todo_object : ${todo_objects}"
+th:text="${todo_object.getTitle()}"></li>
+</p>
+</body>
+</html>
