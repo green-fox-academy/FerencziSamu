@@ -22,6 +22,7 @@ public class H2Application implements CommandLineRunner {
 		todoInterface.save(new Todo("Finish H2 workshop 1"));
 		todoInterface.save(new Todo("Finish JPA workshop 2"));
 		todoInterface.save(new Todo("Create a CRUD project"));
+		todoInterface.save(new Todo("I have to learn Object Relational Mapping"));
 	}
 
 }
