@@ -30,14 +30,20 @@ public class TodoController {
   }
 
   @PostMapping(value = "/add")
-  public String addingNewTodo(@ModelAttribute("todo")Todo todo) {
+  public String addingNewTodo(@ModelAttribute("todo") Todo todo) {
     todoService.saveTodo(todo);
     return "redirect:/todo/";
   }
 
   @GetMapping(value = "/add")
-  public String showingNewTodo(Model model){
+  public String showingNewTodo(Model model) {
     model.addAttribute("todo", new Todo());
     return "add";
+  }
+
+  @RequestMapping(value = "/{id}/delete")
+  public String delete(@PathVariable Long id) {
+    todoService.deleteTodo(id);
+    return "redirect:/todo/";
   }
 }

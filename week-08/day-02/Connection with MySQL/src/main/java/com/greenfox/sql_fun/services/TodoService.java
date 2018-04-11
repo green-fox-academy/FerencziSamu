@@ -10,4 +10,5 @@ import java.util.List;
 public interface TodoService {
   List<Todo> findActives();
   void saveTodo(Todo todo);
+  void deleteTodo(Long id);
 }
