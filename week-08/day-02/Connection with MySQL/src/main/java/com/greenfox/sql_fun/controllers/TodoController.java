@@ -46,4 +46,12 @@ public class TodoController {
     todoService.deleteTodo(id);
     return "redirect:/todo/";
   }
+
+  @GetMapping(value = "/{id}/progress")
+  public String update(@PathVariable Long id) {
+    todoService.updateIsDone(id);
+    todoRepository.save(todoRepository.findById(id).get());
+    return "redirect:/todo/";
+  }
+
 }
