@@ -2,32 +2,64 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
     <title>Todo CRUD App</title>
-    <style>
-        td {
-            border: 1px solid gray;
-            border-collapse: collapse;
-        }
-    </style>
 </head>
 <body>
-<h1 th:text="'Todos for today:'"></h1>
-<a href="/todo/add">Add new todo</a>
-<table>
-    <tr id="tr_1">
-        <th>ID</th>
-        <th>Action</th>
-        <th>Done</th>
-        <th>Urgent</th>
-    </tr>
-    <tr th:each="todo : ${todos}">
-        <td th:text="${todo.getId()}"></td>
-        <td th:text="${todo.getTitle()}"></td>
-        <td th:text="${todo.isDone()}"></td>
-        <td th:text="${todo.isUrgent()}"></td>
-        <td><a th:href="'/todo/' + ${todo.getId()} + '/delete'">delete</a>
-        </td>
-    </tr>
-</table>
+<div class="alert alert-secondary" role="alert">
+    <div class="jumbotron">
+        <h1 class="text-center">Todos of the day</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="row">
+                <div>
+                    <div class="container-fluid">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Action</th>
+                                <th>Done</th>
+                                <th>Urgent</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="todo : ${todos}">
+                                <td th:text="${todo.getId()}"></td>
+                                <td th:text="${todo.getTitle()}"></td>
+                                <td th:text="${todo.isDone()}"></td>
+                                <td th:text="${todo.isUrgent()}"></td>
+                                <td><a th:href="'/todo/' + ${todo.getId()} + '/delete'"
+                                       type="button"
+                                       class="btn btn-xs btn-danger">delete</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container" style="text-align: center">
+                    <a href="/todo/add" type="button"
+                       class="btn btn-lg btn-primary">Add new todo</a>
+                </div>
+            </div>
+            <script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+            <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+        </div>
+        <div class="col-sm-3">
+        </div>
+    </div>
+</div>
 </body>
 </html>
