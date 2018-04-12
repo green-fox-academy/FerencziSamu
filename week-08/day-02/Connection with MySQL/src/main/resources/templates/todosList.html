@@ -79,7 +79,7 @@
                                 <th>Action</th>
                                 <th>Done</th>
                                 <th>Urgent</th>
-                                <th>Progression</th>
+                                <th>Modify</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -87,7 +87,13 @@
                                 <td th:text="${todo.getId()}"></td>
                                 <td th:text="${todo.getTitle()}"
                                     th:style="((${todo.isDone()}) ? ('background-color: LimeGreen ') : ('background-color: yellow'))"></td>
-                                <td th:text="${todo.isDone()}"></td>
+                                <span th:if="${todo.isDone()}">
+                                <td><i class="glyphicon glyphicon-ok" style="color: green"></i></td>
+                                </span>
+                                <span th:if="${!todo.isDone()}">
+                                    <td><i class="glyphicon glyphicon-remove"
+                                           style="color: red"></i></td>
+                                    </span>
                                 <td th:text="${todo.isUrgent()}"></td>
                                 <td><a th:href="'/todo/' + ${todo.getId()} + '/urgent'"
                                        type="button"
