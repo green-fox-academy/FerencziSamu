@@ -19,18 +19,18 @@ public class TodoController {
   TodoService todoService;
 
   @RequestMapping(value = {"/", "/list"})
-  public String todoList(Model model, @RequestParam(value = "isActive", required = false) boolean
+  public String todoList(Model model, @RequestParam(value = "isActive", required = false) Boolean
       isActive) {
-    if (isActive) {
-      model.addAttribute("todos", todoService.findActives());
-    } else  if (!isActive){
-      model.addAttribute("todos", todoService.findDones());
-    } else {
+    if (isActive == null) {
       model.addAttribute("todos", todoRepository.findAll());
+    } else if ((isActive)) {
+      model.addAttribute("todos", todoService.findActives());
+    } else {
+      model.addAttribute("todos", todoService.findDones());
     }
     return "todosList";
   }
-  
+
   @PostMapping(value = "/add")
   public String addingNewTodo(@ModelAttribute("todo") Todo todo) {
     todoService.saveTodo(todo);
