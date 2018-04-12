@@ -56,6 +56,13 @@ public class TodoController {
     return "redirect:/todo/";
   }
 
+  @GetMapping(value = "/{id}/urgent")
+  public String makeUrgent(@PathVariable Long id) {
+    todoService.updateIsUrgent(id);
+    todoRepository.save(todoRepository.findById(id).get());
+    return "redirect:/todo/";
+  }
+
   @PostMapping(value = "/search")
   public String search(@ModelAttribute(name = "title")String title,Model model) {
     model.addAttribute("todos",todoRepository.findTitle(title));

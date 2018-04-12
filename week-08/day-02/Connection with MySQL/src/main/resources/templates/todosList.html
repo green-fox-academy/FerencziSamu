@@ -89,7 +89,10 @@
                                     th:style="((${todo.isDone()}) ? ('background-color: LimeGreen ') : ('background-color: yellow'))"></td>
                                 <td th:text="${todo.isDone()}"></td>
                                 <td th:text="${todo.isUrgent()}"></td>
-                                <td><a th:href="'/todo/' + ${todo.getId()} +'/progress'"
+                                <td><a th:href="'/todo/' + ${todo.getId()} + '/urgent'"
+                                       type="button"
+                                       class="btn btn-xs btn-warning">urgent</a>
+                                    <a th:href="'/todo/' + ${todo.getId()} +'/progress'"
                                        type="button" class="btn btn-xs btn-success">done</a></td>
                                 <td><a th:href="'/todo/' + ${todo.getId()} + '/delete'"
                                        type="button"

@@ -13,4 +13,5 @@ public interface TodoService {
   void saveTodo(Todo todo);
   void deleteTodo(Long id);
   void updateIsDone(Long id);
+  void updateIsUrgent(Long id);
 }
