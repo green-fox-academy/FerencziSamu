@@ -11,6 +11,7 @@ public class Todo {
   @GeneratedValue(strategy = GenerationType.AUTO)
   @Id
   private long id;
+
   private String title;
   private boolean urgent = false;
   private boolean done = false;

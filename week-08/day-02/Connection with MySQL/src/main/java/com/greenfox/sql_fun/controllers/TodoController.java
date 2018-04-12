@@ -23,12 +23,14 @@ public class TodoController {
       isActive) {
     if (isActive) {
       model.addAttribute("todos", todoService.findActives());
+    } else  if (!isActive){
+      model.addAttribute("todos", todoService.findDones());
     } else {
       model.addAttribute("todos", todoRepository.findAll());
     }
     return "todosList";
   }
-
+  
   @PostMapping(value = "/add")
   public String addingNewTodo(@ModelAttribute("todo") Todo todo) {
     todoService.saveTodo(todo);

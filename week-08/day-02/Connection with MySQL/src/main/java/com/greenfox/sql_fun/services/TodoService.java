@@ -9,6 +9,7 @@ import java.util.List;
 @Service
 public interface TodoService {
   List<Todo> findActives();
+  List<Todo> findDones();
   void saveTodo(Todo todo);
   void deleteTodo(Long id);
   void updateIsDone(Long id);

@@ -5,8 +5,9 @@ import com.greenfox.sql_fun.repositories.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 public class TodoServicesImpl implements TodoService {
@@ -16,14 +17,21 @@ public class TodoServicesImpl implements TodoService {
 
   @Override
   public List<Todo> findActives() {
-    List<Todo> todos = new ArrayList<>();
-    todoRepository.findAll().forEach(todos::add);
-    for (int i = 0; i < todos.size(); i++) {
-      if (todos.get(i).isDone()) {
-        todos.remove(i);
-      }
-    }
-    return todos;
+    Iterable<Todo> allTodos = todoRepository.findAll();
+
+    return StreamSupport.stream(allTodos.spliterator(), false)
+        .filter(todo -> !todo.isDone())
+        .collect(Collectors.toList());
+  }
+
+  @Override
+  public List<Todo> findDones() {
+
+    Iterable<Todo> allTodos = todoRepository.findAll();
+
+    return StreamSupport.stream(allTodos.spliterator(), false)
+        .filter(todo -> todo.isDone())
+        .collect(Collectors.toList());
   }
 
   @Override
