@@ -5,6 +5,7 @@ import com.greenfox.sql_fun.repositories.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -26,7 +27,6 @@ public class TodoServicesImpl implements TodoService {
 
   @Override
   public List<Todo> findDones() {
-
     Iterable<Todo> allTodos = todoRepository.findAll();
 
     return StreamSupport.stream(allTodos.spliterator(), false)
