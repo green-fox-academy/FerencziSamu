@@ -35,21 +35,25 @@ public class TodoServicesImpl implements TodoService {
 
   @Override
   public void saveTodo(Todo todo) {
+
     todoRepository.save(todo);
   }
 
   @Override
   public void deleteTodo(Long id) {
+
     todoRepository.deleteById(id);
   }
 
   @Override
   public void updateIsDone(Long id) {
+
     todoRepository.findById(id).get().setDone(true);
   }
 
   @Override
   public void updateIsUrgent(Long id) {
+
     todoRepository.findById(id).get().setUrgent(true);
   }
 
