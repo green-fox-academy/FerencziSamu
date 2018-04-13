@@ -9,4 +9,9 @@ public class AssigneeServiceImpl implements AssigneeService{
 
   @Autowired
   AssigneeRepository assigneeRepository;
+
+  @Override
+  public void nameChange(Long id) {
+    assigneeRepository.findById(id).get();
+  }
 }
