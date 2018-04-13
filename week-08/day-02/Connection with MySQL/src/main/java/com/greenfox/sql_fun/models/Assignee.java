@@ -4,13 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
 
 @Entity
 public class Assignee {
-  static List<Assignee> assignees = new ArrayList<>(Arrays.asList());
 
   @GeneratedValue(strategy = GenerationType.AUTO)
   @Id
@@ -18,4 +15,17 @@ public class Assignee {
 
   private String name;
   private String email;
+
+  public Assignee() { }
+
+  public Assignee(String name) {
+    this();
+    this.name = name;
+  }
+
+  public Assignee(String name,String email) {
+    this(name);
+    this.email = email;
+  }
+
 }
