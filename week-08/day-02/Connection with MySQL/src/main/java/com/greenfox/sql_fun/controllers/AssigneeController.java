@@ -36,4 +36,10 @@ public class AssigneeController {
     return "redirect:/todo/assignees/";
   }
 
+  @RequestMapping(value = "{id}/delete")
+  public String deleteAssignee(@PathVariable(value = "id") Long id) {
+    assigneeService.deleteAssignee(id);
+    return "redirect:/todo/assignees/";
+  }
+
 }

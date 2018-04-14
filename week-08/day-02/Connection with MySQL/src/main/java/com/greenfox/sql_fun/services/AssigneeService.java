@@ -4,6 +4,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface AssigneeService {
-  void nameChange(Long id);
-
+  void deleteAssignee(Long id);
 }

@@ -26,7 +26,10 @@
             <td th:text="${assignee.getEmail()}"></td>
             <td><a th:href="'/todo/assignees/' + ${assignee.getId()} + '/updateName'"
                    type="button"
-                   class="btn btn-xs btn-warning">edit</a></td>
+                   class="btn btn-xs btn-warning">edit</a>
+                <a th:href="'/todo/assignees/' + ${assignee.getId()} + '/delete'" type="button"
+                   class="btn btn-xs btn-danger">delete</a>
+            </td>
         </tr>
         </tbody>
     </table>
