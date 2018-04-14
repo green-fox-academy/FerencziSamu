@@ -31,16 +31,16 @@ public class TodoController {
     return "todosList";
   }
 
-  @PostMapping(value = "/add")
+  @PostMapping(value = "/addTodo")
   public String addingNewTodo(@ModelAttribute("todo") Todo todo) {
     todoService.saveTodo(todo);
     return "redirect:/todo/";
   }
 
-  @GetMapping(value = "/add")
+  @GetMapping(value = "/addTodo")
   public String showingNewTodo(Model model) {
     model.addAttribute("todo", new Todo());
-    return "add";
+    return "addTodo";
   }
 
   @RequestMapping(value = "/{id}/delete")

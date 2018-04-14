@@ -18,13 +18,13 @@
         </div>
         <div class="panel-body">
             <div class="text-center">
-                <form action="#" th:action="@{add}" method="post" th:object="${todo}">
+                <form action="#" th:action="@{addTodo}" method="post" th:object="${todo}">
                     <div>
                         <input type="text" id="title" name="title"
                                placeholder="Enter your todo here" autofocus>
                     </div>
                     <div>
-                        <button type="button" value="submit" class="btn btn-lg btn-success">Add
+                        <button type="submit" value="submit" class="btn btn-lg btn-success">Add
                         </button>
                         <a href="/todo/" type="button" class="btn btn-lg btn-warning">Back</a>
                     </div>

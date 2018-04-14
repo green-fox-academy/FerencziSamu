@@ -9,6 +9,25 @@
     <title>Add new Assignee</title>
 </head>
 <body>
+<div class="panel-body">
+    <div class="text-center">
+        <form action="#" th:action="@{addAssignee}" method="post" th:object="${assignee}">
+            <div>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your assigne's name here" autofocus>
+            </div>
+            <div>
+                <input type="text" id="email" name="email"
+                       placeholder="Enter your assigne's email here" >
+            </div>
+            <div>
+                <button type="submit" value="submit" class="btn btn-lg btn-success">Add
+                </button>
+                <a href="/todo/assignees/" type="button" class="btn btn-lg btn-warning">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
 <script src="webjars/jquery/1.11.1/jquery.min.js"></script>
 <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
 </body>
