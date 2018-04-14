@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous"/>
+    <title>Edit Todo</title>
+</head>
+<body>
+<div class="panel-body">
+    <div class="text-center">
+        <form action="#" th:action="@{editTodo}" method="post" th:object="${todo}">
+            <div>
+                Todo Description: <input type="text" id="title" name="title" th:field="*{title}"
+                             placeholder="New title" autofocus/>
+                <input type="checkbox" id="urgent" name="urgent" th:value="urgent"/>
+            </div>
+            <div>
+                <button type="submit" value="submit" class="btn btn-lg btn-success">Edit
+                </button>
+                <a href="/todo/assignees/list" type="button" class="btn btn-lg btn-warning">
+                    Back</a>
+            </div>
+            <script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+            <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</body>
+</html>

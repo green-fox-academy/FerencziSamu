@@ -86,7 +86,10 @@
                                        class="btn btn-xs btn-warning">urgent</a>
                                     <a th:href="'/todo/' + ${todo.getId()} +'/progress'"
                                        type="button" class="btn btn-xs btn-success">done</a></td>
-                                <td><a th:href="'/todo/' + ${todo.getId()} + '/delete'"
+                                <td><a th:href="'/todo/' + ${todo.getId()} + '/editTodo'"
+                                       type="button"
+                                       class="btn btn-xs btn-warning">edit</a>
+                                    <a th:href="'/todo/' + ${todo.getId()} + '/delete'"
                                        type="button"
                                        class="btn btn-xs btn-danger">delete</a>
                                 </td>

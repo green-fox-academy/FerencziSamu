@@ -69,4 +69,16 @@ public class TodoController {
     return "todosList";
   }
 
+  @GetMapping(value = "/{id}/editTodo")
+  public String editTodo(@PathVariable Long id, Model model) {
+    model.addAttribute("todo", todoRepository.findById(id).get());
+    return "editTodo";
+  }
+
+  @PostMapping(value = "{id}/editTodo")
+  public String updateTodo(Todo todo) {
+    todoRepository.save(todo);
+    return "redirect:/todo/";
+  }
+
 }
