@@ -14,4 +14,5 @@ public interface TodoRepository extends CrudRepository<Todo, Long> {
 
   @Query("select lower(c) from Todo c where c.title like %:title%")
   List<Todo> findTitle(@Param("title") String title);
+
 }

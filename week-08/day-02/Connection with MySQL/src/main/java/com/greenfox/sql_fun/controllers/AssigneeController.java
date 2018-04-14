@@ -42,4 +42,16 @@ public class AssigneeController {
     return "redirect:/todo/assignees/";
   }
 
+  @PostMapping(value = "/addAssignee")
+  public String addingNewAssignee(@ModelAttribute("assignee") Assignee assignee) {
+    assigneeService.saveAssignee(assignee);
+    return "redirect:/todo/assigneesList";
+  }
+
+  @GetMapping(value = "/addAssignee")
+  public String showingNewAssignee(Model model) {
+    model.addAttribute("assignee", new Assignee());
+    return "addAssignee";
+  }
+
 }
