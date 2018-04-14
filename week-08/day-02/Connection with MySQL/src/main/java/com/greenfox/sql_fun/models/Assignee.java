@@ -18,13 +18,13 @@ public class Assignee {
 
   public Assignee() { }
 
-  public Assignee(String name) {
-    this();
-    this.name = name;
-  }
+//  public Assignee(String name) {
+//    this();
+//    this.name = name;
+//  }
 
   public Assignee(String name,String email) {
-    this(name);
+    this.name = name;
     this.email = email;
   }
 

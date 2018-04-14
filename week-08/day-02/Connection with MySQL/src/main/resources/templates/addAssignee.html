@@ -14,11 +14,11 @@
         <form action="#" th:action="@{addAssignee}" method="post" th:object="${assignee}">
             <div>
                 <input type="text" id="name" name="name"
-                       placeholder="Enter your assigne's name here" autofocus>
+                       placeholder="Enter your assigne's name here" autofocus required>
             </div>
             <div>
                 <input type="text" id="email" name="email"
-                       placeholder="Enter your assigne's email here" >
+                       placeholder="Enter your assigne's email here" required>
             </div>
             <div>
                 <button type="submit" value="submit" class="btn btn-lg btn-success">Add
