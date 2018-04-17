@@ -18,4 +18,13 @@ public class GuardianController {
     }
   }
 
+//  @GetMapping(value = "/groot")
+//  public ResponseEntity<GrootResponse> translater(@RequestParam(value = "message", required = false) String somemessage){
+//    if (somemessage == null) {
+//      return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ErrorMessage("I am Groot!"));
+//    } else {
+//      return ResponseEntity.status(HttpStatus.OK).body(new Groot(somemessage));
+//    }
+//  }
+
 }
