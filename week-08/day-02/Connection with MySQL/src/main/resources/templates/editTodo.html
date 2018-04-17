@@ -12,16 +12,19 @@
 <body>
 <div class="panel-body">
     <div class="text-center">
-        <form action="#" th:action="@{editTodo}" method="post" th:object="${todo}">
+        <form action="#" th:action="@{editTodo}" method="post" th:object="${todo}" >
             <div>
                 Todo Description: <input type="text" id="title" name="title" th:field="*{title}"
-                             placeholder="New title" autofocus/>
-                <input type="checkbox" id="urgent" name="urgent" th:value="urgent"/>
+                                         placeholder="New title" autofocus />
+                Todo Urgent: <input type="checkbox" name="urgent" />
+
             </div>
             <div>
                 <button type="submit" value="submit" class="btn btn-lg btn-success">Edit
                 </button>
-                <a href="/todo/assignees/list" type="button" class="btn btn-lg btn-warning">
+
+                </button>
+                <a href="/todo/" type="button" class="btn btn-lg btn-warning">
                     Back</a>
             </div>
             <script src="webjars/jquery/1.11.1/jquery.min.js"></script>

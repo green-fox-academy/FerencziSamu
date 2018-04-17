@@ -38,11 +38,11 @@ public class SzamRestController {
   }
 
   @PostMapping("/dountil/{what}")
-  public Object dountil(@PathVariable(value = "what") String what, @RequestBody (required =
+  public Object dountil(@PathVariable(value = "what") String what, @RequestBody(required =
       false) Until until) {
     if (what.equals("sum")) {
       return untilService.summerize(until);
-    } else if(what.equals("factor")) {
+    } else if (what.equals("factor")) {
       return untilService.factorial(until);
     } else {
       return new Hiba("Please provide a number!");

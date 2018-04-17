@@ -1,6 +1,8 @@
 package com.greenfox.jason_not_fun.untilService;
 
+import com.greenfox.jason_not_fun.Models.Hiba;
 import com.greenfox.jason_not_fun.Models.Until;
+import com.greenfox.jason_not_fun.Models.UntilResponse;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -8,16 +10,28 @@ public class UntilServiceImpl implements UntilService {
 
   @Override
   public Object factorial(Until until) {
-    int i, fact = 1;
-    int number = until.getUntil();
-    for (i = 1; i <= number; i++) {
-      fact = fact * i;
+    int result = 1;
+    if (until != null) {
+      for (int i = 1; i <= until.getUntil(); i++) {
+        result *= i;
+      }
+      return new UntilResponse(result);
+    } else {
+      return new Hiba("Please provide a number!");
     }
-    return fact;
   }
 
   @Override
   public Object summerize(Until until) {
-    return until.getUntil() * 6;
+    int result = 0;
+    if (until != null) {
+      for (int i = 1; i <= until.getUntil(); i++) {
+        result += i;
+      }
+      return new UntilResponse(result);
+    } else {
+      return new Hiba("Please provide a number!");
+    }
   }
+
 }

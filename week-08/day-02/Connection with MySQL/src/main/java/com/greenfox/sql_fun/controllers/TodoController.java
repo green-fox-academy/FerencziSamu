@@ -64,8 +64,8 @@ public class TodoController {
   }
 
   @PostMapping(value = "/search")
-  public String search(@ModelAttribute(name = "title")String title,Model model) {
-    model.addAttribute("todos",todoRepository.findTitle(title));
+  public String search(@ModelAttribute(name = "title") String title, Model model) {
+    model.addAttribute("todos", todoRepository.findTitle(title));
     return "todosList";
   }
 
@@ -75,8 +75,21 @@ public class TodoController {
     return "editTodo";
   }
 
+//  @PostMapping(value = "{id}/editTodo")
+//  public String updateTodo(Todo todo, @PathVariable Long id, @RequestParam(defaultValue = "false")
+//      boolean urgent) {
+//    if (urgent) {
+//      todoService.updateIsUrgent(id);
+//      todoRepository.save(todo);
+//      return "redirect:/todo/";
+//    } else {
+//      todoRepository.save(todo);
+//      return "redirect:/todo/";
+//    }
+//  }
+
   @PostMapping(value = "{id}/editTodo")
-  public String updateTodo(Todo todo) {
+  public String updateTodo(@ModelAttribute("todo") Todo todo) {
     todoRepository.save(todo);
     return "redirect:/todo/";
   }
